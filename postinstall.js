@@ -5,7 +5,7 @@ var readline = require('readline');
 var Zip = require('decompress-zip');
 var request = require('request');
 
-var cdn = process.env.NGROK_CDN_URL || 'https://bin.equinox.io';
+var cdn = process.env.NGROK_CDN_URL || 'http://bin.equinox.io';
 var cdnPath = process.env.NGROK_CDN_PATH || '/c/4VmDzA7iaHb/ngrok-stable-';
 var cdnFiles = {
 	darwinia32:	cdn + cdnPath + 'darwin-386.zip',
