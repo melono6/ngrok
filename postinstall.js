@@ -38,6 +38,7 @@ var ignoreCache = process.env.NGROK_IGNORE_CACHE === 'true';
 install();
 
 function install () {
+	console.log(ignoreCache, localFile);
 	if (!ignoreCache && fs.existsSync(localFile) && fs.statSync(localFile).size) {
 		extract(retry)
 	} else if (!cdnFile) {
