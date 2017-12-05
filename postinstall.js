@@ -31,7 +31,7 @@ try {
 } catch (err) {
 	localPath = binPath;
 }
-var localFileName = new Buffer(cdnFile).toString('base64');
+var localFileName = 'ngrok';
 var localFile = path.join(localPath, localFileName + '.zip');
 var ignoreCache = process.env.NGROK_IGNORE_CACHE === 'true';
 
